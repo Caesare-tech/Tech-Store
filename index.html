@@ -1,0 +1,134 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" href="assets/images/logo2.jpg">
+  <title>TechStore</title>
+  <!-- Bootstrap Icons -->
+  <link rel="stylesheet" href="node_modules/bootstrap-icons/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <div class="left">
+      <button class="icon-btn"><i class="bi bi-cart3"></i></button>
+      <h3>TechStore</h3>
+    </div>
+    <div class="right">
+      <!-- Theme picker -->
+      <div class="theme-picker" id="themePicker">
+        <button id="theme-toggle" class="icon-btn" aria-haspopup="true" aria-expanded="false" aria-label="Choose theme">
+          <i class="bi bi-palette"></i>
+        </button>
+        <ul id="theme-menu" class="theme-menu" role="menu" aria-label="Theme menu" hidden>
+          <li><button class="theme-option" data-theme="cyan" type="button"><span class="swatch swatch-cyan"></span> Cyan Futuristic</button></li>
+          <li><button class="theme-option" data-theme="violet" type="button"><span class="swatch swatch-violet"></span> Violet Neo</button></li>
+          <li><button class="theme-option" data-theme="amber" type="button"><span class="swatch swatch-amber"></span> Amber Pulse</button></li>
+        </ul>
+      </div>
+    </div>
+  </header>
+  <main>
+    <div class="container">
+      <!-- Example card: Duplicate for total 9 products -->
+      <div class="card">
+        <img src="assets/images/samsung.jpeg" alt="Samsung Galaxy A14">
+        <p class="name">Samsung Galaxy A14</p>
+        <p class="price">$140</p>
+        <div class="actions">
+          <button class="btn btn-add"><i class="bi bi-cart-plus"></i> Add to Cart</button>
+          <button class="btn btn-desc" data-desc="Entry-level smartphone with reliable performance for calls, browsing, and apps without breaking the bank."><i class="bi bi-info-circle"></i> Description</button>
+        </div>
+      </div>
+      <!-- Duplicate above card 8 more times with image filenames:
+           powerbank.jpg, charger.jpg, usb_cable.jpg, earbuds.jpg, speaker.jpg, ssd.jpg, mouse.jpg, smart_plug.jpg -->
+      <!-- Example card: Duplicate for total 9 products -->
+      <div class="card">
+        <img src="assets/images/powerbank.jpeg" alt="Powerbank">
+        <p class="name">Anker PowerCore 10000</p>
+        <p class="price">$25</p>
+        <div class="actions">
+          <button class="btn btn-add"><i class="bi bi-cart-plus"></i> Add to Cart</button>
+          <button class="btn btn-desc" data-desc="Lightweight, pocket-sized power bank that keeps your phone charged throughout the day."><i class="bi bi-info-circle"></i> Description</button>
+        </div>
+      </div>
+      <!-- Example card: Duplicate for total 9 products -->
+      <div class="card">
+        <img src="assets/images/charger.jpeg" alt="USB-C Charger">
+        <p class="name">USB-C Wall Charger</p>
+        <p class="price">$20</p>
+        <div class="actions">
+          <button class="btn btn-add"><i class="bi bi-cart-plus"></i> Add to Cart</button>
+          <button class="btn btn-desc" data-desc="Compact, fast charger compatible with most modern devices, including phones and tablets."><i class="bi bi-info-circle"></i> Description</button>
+        </div>
+      </div>
+      <!-- Example card: Duplicate for total 9 products -->
+      <div class="card">
+        <img src="assets/images/usb cable.jpeg" alt="USB-C Cable">
+        <p class="name">USB-C Cable</p>
+        <p class="price">$8</p>
+        <div class="actions">
+          <button class="btn btn-add"><i class="bi bi-cart-plus"></i> Add to Cart</button>
+          <button class="btn btn-desc" data-desc="Strong, tangle-free cable built to last — daily charging without fraying or breaking."><i class="bi bi-info-circle"></i> Description</button>
+        </div>
+      </div>
+      <!-- Example card: Duplicate for total 9 products -->
+      <div class="card">
+        <img src="assets/images/speaker.jpeg" alt="Bluetooth Speaker">
+        <p class="name">Portable Bluetooth Speaker</p>
+        <p class="price">$50</p>
+        <div class="actions">
+          <button class="btn btn-add"><i class="bi bi-cart-plus"></i> Add to Cart</button>
+          <button class="btn btn-desc" data-desc="Small but powerful speaker perfect for home, gatherings, or outdoor adventures."><i class="bi bi-info-circle"></i> Description</button>
+        </div>
+      </div>
+      <!-- Example card: Duplicate for total 9 products -->
+      <div class="card">
+        <img src="assets/images/earbuds.jpeg" alt="Earbuds">
+        <p class="name">Redmi Buds</p>
+        <p class="price">$35</p>
+        <div class="actions">
+          <button class="btn btn-add"><i class="bi bi-cart-plus"></i> Add to Cart</button>
+          <button class="btn btn-desc" data-desc="Affordable wireless earbuds with clear sound and noise isolation for music and calls."><i class="bi bi-info-circle"></i> Description</button>
+        </div>
+      </div>
+      <!-- Example card: Duplicate for total 9 products -->
+      <div class="card">
+        <img src="assets/images/portable ssd.jpeg" alt="Samsung T7 SSD">
+        <p class="name">Portable SSD 1TB</p>
+        <p class="price">$80</p>
+        <div class="actions">
+          <button class="btn btn-add"><i class="bi bi-cart-plus"></i> Add to Cart</button>
+          <button class="btn btn-desc" data-desc="Ultra-fast external storage for quick file transfers, media, and backups."><i class="bi bi-info-circle"></i> Description</button>
+        </div>
+      </div>
+      <!-- Example card: Duplicate for total 9 products -->
+      <div class="card">
+        <img src="assets/images/mouse.jpeg" alt="Wireless Mouse">
+        <p class="name">Wireless Mouse</p>
+        <p class="price">$15</p>
+        <div class="actions">
+          <button class="btn btn-add"><i class="bi bi-cart-plus"></i> Add to Cart</button>
+          <button class="btn btn-desc" data-desc="Sleek, portable mouse offering better control and precision than a laptop trackpad."><i class="bi bi-info-circle"></i> Description</button>
+        </div>
+      </div>
+      <!-- Example card: Duplicate for total 9 products -->
+      <div class="card">
+        <img src="assets/images/smart plug.jpeg" alt="Smart Plug">
+        <p class="name">Smart Plug (WI-FI)</p>
+        <p class="price">$25</p>
+        <div class="actions">
+          <button class="btn btn-add"><i class="bi bi-cart-plus"></i> Add to Cart</button>
+          <button class="btn btn-desc" data-desc="Smart home starter gadget that lets you control appliances remotely and save energy."><i class="bi bi-info-circle"></i> Description</button>
+        </div>
+      </div>
+    </div>
+  </main>
+  <!-- alert, modals -->
+  <div id="global-alert" class="global-alert" hidden><i class="bi bi-check-circle-fill alert-icon"></i><div class="alert-text"></div><button class="alert-close">&times;</button></div>
+  <div id="desc-modal" class="modal" aria-hidden="true"><div class="modal-panel"><button class="modal-close">&times;</button><h3 id="modal-title"></h3><div id="modal-body"></div></div></div>
+  <div id="transaction-modal" class="modal" aria-hidden="true"><div class="modal-panel"><button class="modal-close">&times;</button><h3>Complete Your Purchase</h3><form id="transaction-form">...see script for fields...</form></div></div>
+  <script src="script.js"></script>
+</body>
+</html>
