@@ -62,6 +62,10 @@ header h3 {
   color: var(--accent);
   font-size: 22px;
   margin: 0;
+  background: linear-gradient(30deg, var(--accent), var(--glow));
+  color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
 }
 /* icon button */
 .icon-btn {
@@ -338,3 +342,4 @@ header h3 {
     height: 110px;
   }
 }
+
